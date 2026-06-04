@@ -27,7 +27,10 @@ driver.find_element(By.XPATH, "//input[@data-qa='login-email']").send_keys("sown
 driver.find_element(By.XPATH, "//input[@data-qa='login-password']").send_keys("Sow@911!")
 
 # 6. Click Login button
-driver.find_element(By.XPATH, "//button[text()='Login']").click()
+login_btn = WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.XPATH, "//button[text()='Login']"))
+)
+login_btn.click()
 print("Login button click")
 
 # 7. Verify Logged in as username
