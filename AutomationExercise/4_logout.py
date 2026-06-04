@@ -42,12 +42,14 @@ logged_in = WebDriverWait(driver, 10).until(
 print("Logged In:", logged_in.is_displayed())
 print(logged_in.text)
 
-# 8. Click Delete Account
-delete_btn=driver.find_element(By.XPATH,"//a[contains(text(),'Delete Account')]")
-driver.execute_script("arguments[0].click();", delete_btn)
+#8. user logout
+logout= WebDriverWait(driver, 10).until(
+    EC.element_to_be_clickable((By.XPATH, "//a[text()=' Logout']"))).click()
+print("Logout clicked")
 
-# 9. Verify ACCOUNT DELETED
-account_deleted=WebDriverWait(driver, 15).until(EC.visibility_of_element_located( (By.XPATH, "//*[contains(text(),'Account Deleted')]")))
-print("ACCOUNT DELETED:", account_deleted.is_displayed())
+#9. navigate to the login page 
+login_page = WebDriverWait(driver, 10).until(
+    EC.visibility_of_element_located((By.XPATH, "//h2[text()='Login to your account']")))
+print("Redirected to login page:", login_page.is_displayed())
 time.sleep(3)
 driver.quit()
