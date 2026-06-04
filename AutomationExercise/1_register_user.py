@@ -54,7 +54,6 @@ driver.find_element(By.ID, "address1").send_keys("Salem")
 driver.find_element(By.ID, "address2").send_keys("Tamil Nadu")
 
 Select(driver.find_element(By.ID, "country")).select_by_visible_text("India")
-
 driver.find_element(By.ID, "state").send_keys("Tamil Nadu")
 driver.find_element(By.ID, "city").send_keys("Salem")
 driver.find_element(By.ID, "zipcode").send_keys("636005")
@@ -87,7 +86,7 @@ print("Page Title =", driver.title)
 
 # Verify Account Deleted
 account_deleted = WebDriverWait(driver, 15).until(
-    EC.visibility_of_element_located((By.XPATH, "//*[contains(text(),'Account Deleted')]")))
+    EC.visibility_of_element_located((By.XPATH,"//*[contains(text(),'Account Deleted')]")))
 print("ACCOUNT DELETED:", account_deleted.is_displayed())
 
 # 17. Continue

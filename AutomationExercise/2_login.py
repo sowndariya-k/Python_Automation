@@ -23,14 +23,19 @@ login_text=driver.find_element(By.XPATH, "//h2[text()='Login to your account']")
 print("Login to your account visible:", login_text.is_displayed())
 
 # 5. Enter correct email and password
-driver.find_element(By.XPATH, "//input[@data-qa='login-email']").send_keys("sowndariya@gmail.com")
+driver.find_element(By.XPATH, "//input[@data-qa='login-email']").send_keys("sowndariya12@gmail.com")
 driver.find_element(By.XPATH, "//input[@data-qa='login-password']").send_keys("Sow@911!")
 
 # 6. Click Login button
 driver.find_element(By.XPATH, "//button[text()='Login']").click()
+print("Login button click")
 
 # 7. Verify Logged in as username
-logged_in = driver.find_element(By.XPATH, "//a[contains(text(),'Logged in as')]")
+logged_in = WebDriverWait(driver, 10).until(
+    EC.visibility_of_element_located(
+        (By.XPATH, "//a[contains(text(),'Logged in as')]")
+    )
+)
 print("Logged In:", logged_in.is_displayed())
 print(logged_in.text)
 
