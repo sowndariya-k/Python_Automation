@@ -79,6 +79,7 @@ print(logged_in.text)
 delete_btn = driver.find_element(By.XPATH,"//a[contains(text(),'Delete Account')]")
 print("Delete button visible:", delete_btn.is_displayed())
 print("Delete button enabled:", delete_btn.is_enabled())
+#javascript executor
 driver.execute_script("arguments[0].click();", delete_btn)
 time.sleep(5)
 print("Current URL =", driver.current_url)
