@@ -23,7 +23,7 @@ login_text=driver.find_element(By.XPATH, "//h2[text()='Login to your account']")
 print("Login to your account visible:", login_text.is_displayed())
 
 # 5. Enter correct email and password
-driver.find_element(By.XPATH, "//input[@data-qa='login-email']").send_keys("sowndariya15@gmail.com")
+driver.find_element(By.XPATH, "//input[@data-qa='login-email']").send_keys("sowndariya17@gmail.com")
 driver.find_element(By.XPATH, "//input[@data-qa='login-password']").send_keys("Sow@911!")
 
 # 6. Click Login button
