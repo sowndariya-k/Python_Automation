@@ -3,10 +3,10 @@ import os
 
 config = ConfigParser()
 
-BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-CONFIG_PATH = os.path.join(BASE_DIR, "config.ini")
+base_dir = os.path.dirname(os.path.abspath(__file__))
+config_path = os.path.join(base_dir, "config.ini")
 
-config.read(CONFIG_PATH)
+config.read(config_path)
 
 def get_config(section, key):
     return config.get(section, key)

@@ -10,7 +10,7 @@ class TestLogin:
 
     def test_validLogin(self):
 
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 15)
 
         wait.until(EC.element_to_be_clickable((By.ID, "login2"))).click()
 
@@ -24,12 +24,14 @@ class TestLogin:
 
         wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Log in']"))).click()
 
-        assert wait.until(EC.visibility_of_element_located((By.ID, "logout2"))).is_displayed()
+        assert wait.until(
+            EC.visibility_of_element_located((By.ID, "logout2"))
+        ).is_displayed()
 
 
     def test_invaliduser(self):
 
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 15)
 
         wait.until(EC.element_to_be_clickable((By.ID, "login2"))).click()
 
@@ -50,7 +52,7 @@ class TestLogin:
 
     def test_invalidpassword(self):
 
-        wait = WebDriverWait(self.driver, 10)
+        wait = WebDriverWait(self.driver, 15)
 
         wait.until(EC.element_to_be_clickable((By.ID, "login2"))).click()
 
