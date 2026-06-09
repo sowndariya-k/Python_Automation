@@ -3,7 +3,7 @@ import pytest
 import pytest_check as check
 def test_sample_one():
     print("Hai")
-    check.equal(1 + 1, 3)
+    check.equal(1 + 1, 2)
     print("works")
 @pytest.mark.xfail(reason="fail skipped")
 def test_sample1():
