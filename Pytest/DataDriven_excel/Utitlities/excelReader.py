@@ -1,21 +1,16 @@
-import os
 import openpyxl
 
-def get_data(relative_path, sheet_name):
-    BASE_DIR = os.getcwd()   # Jenkins workspace root during run
-    file_path = os.path.join(BASE_DIR, relative_path)
+def get_data(path, sheet_name):
+    final_list=[]
+    workbook=openpyxl.load_workbook(path)
+    sheet=workbook[sheet_name]
+    total_row=sheet.max_row
+    total_col=sheet.max_column
 
-    if not os.path.exists(file_path):
-        raise FileNotFoundError(f"Excel file not found at: {file_path}")
+    for r in range(2, total_row+1):
+        row_list=[]
+        for c in range(1, total_col+1):
+            row_list.append(sheet.cell(row=r, column=c).value)
+        final_list.append(row_list)
 
-    workbook = openpyxl.load_workbook(file_path)
-    sheet = workbook[sheet_name]
-
-    data = []
-    for r in range(2, sheet.max_row + 1):
-        row = []
-        for c in range(1, sheet.max_column + 1):
-            row.append(sheet.cell(r, c).value)
-        data.append(tuple(row))
-
-    return data
+    return final_list

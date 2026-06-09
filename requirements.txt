@@ -6,3 +6,4 @@ webdriver-manager
 allure-pytest
 pytest-check
 openpyxl
+pytest-assume

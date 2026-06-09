@@ -1,0 +1,256 @@
+2026-06-09 17:03:09 - INFO - Starting test with username=sowndariya
+2026-06-09 17:03:15 - INFO - Opened application
+2026-06-09 17:03:15 - INFO - Clicked login button
+2026-06-09 17:03:16 - INFO - Entered credentials
+2026-06-09 17:03:16 - INFO - Clicked submit login
+2026-06-09 17:03:19 - INFO - No alert, login assumed successful
+2026-06-09 17:03:29 - ERROR - Test failed: Message: 
+
+2026-06-09 17:03:31 - INFO - Browser closed
+2026-06-09 17:03:31 - INFO - Starting test with username=*sk
+2026-06-09 17:03:45 - INFO - Opened application
+2026-06-09 17:03:52 - INFO - Clicked login button
+2026-06-09 17:03:54 - INFO - Entered credentials
+2026-06-09 17:03:55 - INFO - Clicked submit login
+2026-06-09 17:03:58 - INFO - No alert, login assumed successful
+2026-06-09 17:04:01 - ERROR - Test failed: Alert Text: User does not exist.
+Message: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=148.0.7778.218)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6914d7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff6914d7e50+14900]
+	chromedriver!(No symbol) [0x7ff69123d5ad]
+	chromedriver!(No symbol) [0x7ff6912e5338]
+	chromedriver!(No symbol) [0x7ff691289df8]
+	chromedriver!(No symbol) [0x7ff69128ace3]
+	chromedriver!GetHandleVerifier [0x7ff6917ecc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff6917e7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff69180bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff6914f6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff6914fecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff6914e1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff6914e1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6914c60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffeb978e957+17]
+	ntdll!RtlUserThreadStart [0x7ffeba80427c+2c]
+
+2026-06-09 17:04:06 - INFO - Browser closed
+2026-06-09 17:04:06 - INFO - Starting test with username=sowndariya
+2026-06-09 17:04:16 - INFO - Opened application
+2026-06-09 17:04:19 - INFO - Clicked login button
+2026-06-09 17:04:23 - INFO - Entered credentials
+2026-06-09 17:04:24 - INFO - Clicked submit login
+2026-06-09 17:04:27 - INFO - No alert, login assumed successful
+2026-06-09 17:04:31 - ERROR - Test failed: Alert Text: Wrong password.
+Message: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=148.0.7778.218)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6914d7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff6914d7e50+14900]
+	chromedriver!(No symbol) [0x7ff69123d5ad]
+	chromedriver!(No symbol) [0x7ff69124eb4d]
+	chromedriver!(No symbol) [0x7ff6912566aa]
+	chromedriver!(No symbol) [0x7ff691228c11]
+	chromedriver!(No symbol) [0x7ff69124dfab]
+	chromedriver!(No symbol) [0x7ff6912e4737]
+	chromedriver!(No symbol) [0x7ff691289df8]
+	chromedriver!(No symbol) [0x7ff69128ace3]
+	chromedriver!GetHandleVerifier [0x7ff6917ecc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff6917e7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff69180bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff6914f6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff6914fecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff6914e1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff6914e1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6914c60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffeb978e957+17]
+	ntdll!RtlUserThreadStart [0x7ffeba80427c+2c]
+
+2026-06-09 17:04:53 - INFO - Browser closed
+2026-06-09 17:05:10 - INFO - Starting test with username=sowndariya
+2026-06-09 17:05:28 - INFO - Opened application
+2026-06-09 17:05:28 - INFO - Clicked login button
+2026-06-09 17:05:29 - INFO - Entered credentials
+2026-06-09 17:05:30 - INFO - Clicked submit login
+2026-06-09 17:05:33 - INFO - No alert, login assumed successful
+2026-06-09 17:05:43 - ERROR - Test failed: Message: 
+
+2026-06-09 17:05:45 - INFO - Browser closed
+2026-06-09 17:05:45 - INFO - Starting test with username=*sk
+2026-06-09 17:05:48 - INFO - Opened application
+2026-06-09 17:05:48 - ERROR - Test failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.218)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6914d7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff6914d7e50+14900]
+	chromedriver!(No symbol) [0x7ff69123d5ad]
+	chromedriver!(No symbol) [0x7ff6912140f2]
+	chromedriver!(No symbol) [0x7ff6912c6f56]
+	chromedriver!(No symbol) [0x7ff6912e4172]
+	chromedriver!(No symbol) [0x7ff691289df8]
+	chromedriver!(No symbol) [0x7ff69128ace3]
+	chromedriver!GetHandleVerifier [0x7ff6917ecc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff6917e7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff69180bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff6914f6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff6914fecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff6914e1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff6914e1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6914c60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffeb978e957+17]
+	ntdll!RtlUserThreadStart [0x7ffeba80427c+2c]
+
+2026-06-09 17:05:50 - INFO - Browser closed
+2026-06-09 17:05:50 - INFO - Starting test with username=sowndariya
+2026-06-09 17:05:52 - INFO - Opened application
+2026-06-09 17:05:52 - ERROR - Test failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.218)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6914d7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff6914d7e50+14900]
+	chromedriver!(No symbol) [0x7ff69123d5ad]
+	chromedriver!(No symbol) [0x7ff6912140f2]
+	chromedriver!(No symbol) [0x7ff6912c6f56]
+	chromedriver!(No symbol) [0x7ff6912e4172]
+	chromedriver!(No symbol) [0x7ff691289df8]
+	chromedriver!(No symbol) [0x7ff69128ace3]
+	chromedriver!GetHandleVerifier [0x7ff6917ecc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff6917e7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff69180bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff6914f6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff6914fecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff6914e1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff6914e1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6914c60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffeb978e957+17]
+	ntdll!RtlUserThreadStart [0x7ffeba80427c+2c]
+
+2026-06-09 17:05:55 - INFO - Browser closed
+2026-06-09 17:05:59 - INFO - Starting test with username=sowndariya
+2026-06-09 17:06:04 - INFO - Opened application
+2026-06-09 17:06:05 - INFO - Clicked login button
+2026-06-09 17:06:06 - INFO - Entered credentials
+2026-06-09 17:06:06 - INFO - Clicked submit login
+2026-06-09 17:06:09 - INFO - No alert, login assumed successful
+2026-06-09 17:06:19 - ERROR - Test failed: Message: 
+
+2026-06-09 17:06:21 - INFO - Browser closed
+2026-06-09 17:06:21 - INFO - Starting test with username=*sk
+2026-06-09 17:06:26 - INFO - Opened application
+2026-06-09 17:06:26 - ERROR - Test failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.218)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6914d7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff6914d7e50+14900]
+	chromedriver!(No symbol) [0x7ff69123d5ad]
+	chromedriver!(No symbol) [0x7ff6912140f2]
+	chromedriver!(No symbol) [0x7ff6912c6f56]
+	chromedriver!(No symbol) [0x7ff6912e4172]
+	chromedriver!(No symbol) [0x7ff691289df8]
+	chromedriver!(No symbol) [0x7ff69128ace3]
+	chromedriver!GetHandleVerifier [0x7ff6917ecc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff6917e7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff69180bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff6914f6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff6914fecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff6914e1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff6914e1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6914c60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffeb978e957+17]
+	ntdll!RtlUserThreadStart [0x7ffeba80427c+2c]
+
+2026-06-09 17:06:28 - INFO - Browser closed
+2026-06-09 17:06:28 - INFO - Starting test with username=sowndariya
+2026-06-09 17:06:31 - INFO - Opened application
+2026-06-09 17:06:31 - ERROR - Test failed: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=148.0.7778.218)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6914d7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff6914d7e50+14900]
+	chromedriver!(No symbol) [0x7ff69123d5ad]
+	chromedriver!(No symbol) [0x7ff6912140f2]
+	chromedriver!(No symbol) [0x7ff6912c6f56]
+	chromedriver!(No symbol) [0x7ff6912e4172]
+	chromedriver!(No symbol) [0x7ff691289df8]
+	chromedriver!(No symbol) [0x7ff69128ace3]
+	chromedriver!GetHandleVerifier [0x7ff6917ecc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff6917e7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff69180bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff6914f6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff6914fecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff6914e1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff6914e1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6914c60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffeb978e957+17]
+	ntdll!RtlUserThreadStart [0x7ffeba80427c+2c]
+
+2026-06-09 17:06:33 - INFO - Browser closed
+2026-06-09 17:06:53 - INFO - Starting test with username=sowndariya
+2026-06-09 17:07:07 - INFO - Opened application
+2026-06-09 17:07:07 - INFO - Clicked login button
+2026-06-09 17:07:08 - INFO - Entered credentials
+2026-06-09 17:07:08 - INFO - Clicked submit login
+2026-06-09 17:07:11 - INFO - No alert, login assumed successful
+2026-06-09 17:07:21 - ERROR - Test failed: Message: 
+
+2026-06-09 17:07:24 - INFO - Browser closed
+2026-06-09 17:07:24 - INFO - Starting test with username=*sk
+2026-06-09 17:07:50 - INFO - Opened application
+2026-06-09 17:07:50 - INFO - Clicked login button
+2026-06-09 17:07:51 - INFO - Entered credentials
+2026-06-09 17:07:51 - INFO - Clicked submit login
+2026-06-09 17:07:54 - INFO - No alert, login assumed successful
+2026-06-09 17:07:58 - ERROR - Test failed: Alert Text: User does not exist.
+Message: unexpected alert open: {Alert text : User does not exist.}
+  (Session info: chrome=148.0.7778.218)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6914d7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff6914d7e50+14900]
+	chromedriver!(No symbol) [0x7ff69123d5ad]
+	chromedriver!(No symbol) [0x7ff6912e5338]
+	chromedriver!(No symbol) [0x7ff691289df8]
+	chromedriver!(No symbol) [0x7ff69128ace3]
+	chromedriver!GetHandleVerifier [0x7ff6917ecc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff6917e7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff69180bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff6914f6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff6914fecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff6914e1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff6914e1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6914c60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffeb978e957+17]
+	ntdll!RtlUserThreadStart [0x7ffeba80427c+2c]
+
+2026-06-09 17:08:01 - INFO - Browser closed
+2026-06-09 17:08:01 - INFO - Starting test with username=sowndariya
+2026-06-09 17:08:14 - INFO - Opened application
+2026-06-09 17:08:15 - INFO - Clicked login button
+2026-06-09 17:08:16 - INFO - Entered credentials
+2026-06-09 17:08:16 - INFO - Clicked submit login
+2026-06-09 17:08:19 - INFO - No alert, login assumed successful
+2026-06-09 17:08:21 - ERROR - Test failed: Alert Text: Wrong password.
+Message: unexpected alert open: {Alert text : Wrong password.}
+  (Session info: chrome=148.0.7778.218)
+Stacktrace:
+	chromedriver!GetHandleVerifier [0x7ff6914d7de5+14895]
+	chromedriver!GetHandleVerifier [0x7ff6914d7e50+14900]
+	chromedriver!(No symbol) [0x7ff69123d5ad]
+	chromedriver!(No symbol) [0x7ff6912e5338]
+	chromedriver!(No symbol) [0x7ff691289df8]
+	chromedriver!(No symbol) [0x7ff69128ace3]
+	chromedriver!GetHandleVerifier [0x7ff6917ecc49+3296f9]
+	chromedriver!GetHandleVerifier [0x7ff6917e7375+323e25]
+	chromedriver!GetHandleVerifier [0x7ff69180bc82+348732]
+	chromedriver!GetHandleVerifier [0x7ff6914f6045+32af5]
+	chromedriver!GetHandleVerifier [0x7ff6914fecec+3b79c]
+	chromedriver!GetHandleVerifier [0x7ff6914e1bc4+1e674]
+	chromedriver!GetHandleVerifier [0x7ff6914e1d54+1e804]
+	chromedriver!GetHandleVerifier [0x7ff6914c60e7+2b97]
+	KERNEL32!BaseThreadInitThunk [0x7ffeb978e957+17]
+	ntdll!RtlUserThreadStart [0x7ffeba80427c+2c]
+
+2026-06-09 17:08:23 - INFO - Browser closed
