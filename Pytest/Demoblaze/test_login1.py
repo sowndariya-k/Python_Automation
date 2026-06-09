@@ -34,7 +34,6 @@ class TestLogin:
 
 
     def test_invalidpassword(self):
-        
                 wait = WebDriverWait(self.driver, 10)
                 wait.until(EC.element_to_be_clickable((By.ID, "login2"))).click()
         
