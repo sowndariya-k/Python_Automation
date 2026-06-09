@@ -6,7 +6,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 
-@pytest.mark.parametrize("username,password", excelReader.get_data("ExcelFiles/loginData.xlsx", "login"))
+@pytest.mark.parametrize("username,password", excelReader.get_data("Pytest/DataDriven_excel/ExcelFiles/loginData.xlsx", "login"))
 class TestLogin1:
 
     def test_validLogin(self, username, password):
