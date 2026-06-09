@@ -1,9 +1,10 @@
 import sys
-
 import pytest
-#def test_sample_one():
-#    print("Hai")
-#    assert 1+1==3
+import pytest_check as check
+def test_sample_one():
+    print("Hai")
+    check.equal(1 + 1, 3)
+    print("works")
 @pytest.mark.xfail(reason="fail skipped")
 def test_sample1():
     assert 1+1==2
