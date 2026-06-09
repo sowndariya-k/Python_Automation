@@ -8,19 +8,10 @@ class TestLogin:
 
     def test_validLogin(self):
 
-        self.driver.get(read_config.get_config("basic info", "url"))
+        self.driver.find_element(By.XPATH,"//span[text()='My Account']").click()
 
-        self.driver.find_element(By.ID, "login2").click()
-
-        self.driver.find_element(By.ID, "loginusername").send_keys(
-            read_config.get_config("login credential", "username")
-        )
-
-        self.driver.find_element(By.ID, "loginpassword").send_keys(
-            read_config.get_config("login credential", "password")
-        )
-
-        self.driver.find_element(By.XPATH, "//button[text()='Log in']").click()
-
-        logout = self.driver.find_element(By.ID, "logout2")
-        assert logout.is_displayed()
+        self.driver.find_element(By.LINK_TEXT,"Login").click()
+        self.driver.find_element(By.ID,"input-email").send_keys(read_config.get_config("login credential","username"))
+        self.driver.find_element(By.ID,"input-password").send_keys(read_config.get_config("login credential","password"))
+        self.driver.find_element(By.XPATH,"//input[@value='Login']").click()
+        assert "account" in self.driver.current_url.lower()
