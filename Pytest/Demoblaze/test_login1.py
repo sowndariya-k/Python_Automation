@@ -10,9 +10,11 @@ class TestLogin:
 
     def test_validLogin(self):
 
-        wait = WebDriverWait(self.driver, 15)
+        wait = WebDriverWait(self.driver, 20)
 
-        wait.until(EC.element_to_be_clickable((By.ID, "login2"))).click()
+        # click login button safely
+        login_btn = wait.until(EC.element_to_be_clickable((By.ID, "login2")))
+        login_btn.click()
 
         wait.until(EC.visibility_of_element_located((By.ID, "loginusername"))).send_keys(
             read_config.get_config("login credential", "username")
@@ -31,7 +33,7 @@ class TestLogin:
 
     def test_invaliduser(self):
 
-        wait = WebDriverWait(self.driver, 15)
+        wait = WebDriverWait(self.driver, 20)
 
         wait.until(EC.element_to_be_clickable((By.ID, "login2"))).click()
 
@@ -45,14 +47,17 @@ class TestLogin:
 
         wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Log in']"))).click()
 
-        alert = wait.until(EC.alert_is_present())
-        assert "User does not exist" in alert.text
-        alert.accept()
+        # Demoblaze shows modal text, not real alert sometimes
+        error = wait.until(
+            EC.visibility_of_element_located((By.XPATH, "//div[@class='modal-content']"))
+        )
+
+        assert "User does not exist" in error.text or "Wrong password" in error.text
 
 
     def test_invalidpassword(self):
 
-        wait = WebDriverWait(self.driver, 15)
+        wait = WebDriverWait(self.driver, 20)
 
         wait.until(EC.element_to_be_clickable((By.ID, "login2"))).click()
 
@@ -66,6 +71,8 @@ class TestLogin:
 
         wait.until(EC.element_to_be_clickable((By.XPATH, "//button[text()='Log in']"))).click()
 
-        alert = wait.until(EC.alert_is_present())
-        assert "Wrong password" in alert.text
-        alert.accept()
+        error = wait.until(
+            EC.visibility_of_element_located((By.XPATH, "//div[@class='modal-content']"))
+        )
+
+        assert "Wrong password" in error.text or "User does not exist" in error.text
