@@ -7,3 +7,4 @@ allure-pytest
 pytest-check
 openpyxl
 pytest-assume
+selenium-page-factory
