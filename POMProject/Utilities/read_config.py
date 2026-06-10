@@ -1,8 +1,14 @@
 from configparser import ConfigParser
+import os
 
 config = ConfigParser()
-config.read("config.ini")
 
+config.read(
+    os.path.join(
+        os.path.dirname(os.path.dirname(os.path.abspath(__file__))),
+        "config.ini"
+    )
+)
 
 class ReadConfig:
 
