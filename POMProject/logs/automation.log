@@ -1,0 +1,54 @@
+2026-06-10 13:03:02,511 - INFO - login test start
+2026-06-10 13:03:04,984 - INFO - valid login verified
+2026-06-10 13:03:10,269 - INFO - Product Test Started
+2026-06-10 13:03:11,434 - INFO - Product Test Passed
+2026-06-10 13:03:16,836 - INFO - Search Test Started
+2026-06-10 13:03:16,929 - INFO - Entered Product
+2026-06-10 13:03:17,247 - INFO - Clicked Search Button
+2026-06-10 13:03:17,274 - INFO - Search Test Passed
+2026-06-10 13:12:06,474 - INFO - login test start
+2026-06-10 13:12:07,995 - INFO - valid login verified
+2026-06-10 13:12:14,665 - INFO - Product Test Started
+2026-06-10 13:12:16,164 - INFO - Product Test Passed
+2026-06-10 13:12:22,660 - INFO - Search Test Started for HP
+2026-06-10 13:12:22,735 - INFO - Entered Product: HP
+2026-06-10 13:12:23,128 - INFO - Clicked Search Button
+2026-06-10 13:12:23,157 - INFO - Search Test Passed for HP
+2026-06-10 13:12:28,686 - INFO - Search Test Started for Mac
+2026-06-10 13:12:28,754 - INFO - Entered Product: Mac
+2026-06-10 13:12:29,316 - INFO - Clicked Search Button
+2026-06-10 13:12:35,218 - INFO - Search Test Started for Samsung
+2026-06-10 13:12:35,310 - INFO - Entered Product: Samsung
+2026-06-10 13:12:35,699 - INFO - Clicked Search Button
+2026-06-10 13:14:09,755 - INFO - login test start
+2026-06-10 13:14:16,735 - INFO - Product Test Started
+2026-06-10 13:14:22,292 - INFO - Search Test Started for HP
+2026-06-10 13:14:22,361 - INFO - Entered Product: HP
+2026-06-10 13:14:22,734 - INFO - Clicked Search Button
+2026-06-10 13:14:22,757 - INFO - Search Test Passed for HP
+2026-06-10 13:14:27,610 - INFO - Search Test Started for Mac
+2026-06-10 13:14:27,662 - INFO - Entered Product: Mac
+2026-06-10 13:14:27,995 - INFO - Clicked Search Button
+2026-06-10 13:14:28,014 - INFO - Search Test Passed for Mac
+2026-06-10 13:14:33,879 - INFO - Search Test Started for Samsung
+2026-06-10 13:14:33,953 - INFO - Entered Product: Samsung
+2026-06-10 13:14:34,481 - INFO - Clicked Search Button
+2026-06-10 13:14:34,504 - INFO - Search Test Passed for Samsung
+2026-06-10 14:02:04,696 - INFO - login test start
+2026-06-10 14:02:06,192 - INFO - valid login verified
+2026-06-10 14:02:11,119 - INFO - Product Test Started
+2026-06-10 14:02:16,572 - INFO - Search Test Started for HP
+2026-06-10 14:02:16,625 - INFO - Entered Product: HP
+2026-06-10 14:02:16,907 - INFO - Clicked Search Button
+2026-06-10 14:02:16,927 - INFO - Search Test Passed for HP
+2026-06-10 14:02:21,821 - INFO - Search Test Started for Mac
+2026-06-10 14:02:21,871 - INFO - Entered Product: Mac
+2026-06-10 14:02:22,220 - INFO - Clicked Search Button
+2026-06-10 14:02:22,245 - INFO - Search Test Passed for Mac
+2026-06-10 14:02:27,093 - INFO - Search Test Started for Samsung
+2026-06-10 14:02:27,150 - INFO - Entered Product: Samsung
+2026-06-10 14:02:27,429 - INFO - Clicked Search Button
+2026-06-10 14:02:27,449 - INFO - Search Test Passed for Samsung
+2026-06-10 14:08:38,084 - INFO - Product Test Started
+2026-06-10 14:10:15,283 - INFO - Product Test Started
+2026-06-10 14:10:17,458 - INFO - Product Test Passed
