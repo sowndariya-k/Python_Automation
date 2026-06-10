@@ -49,10 +49,7 @@ class TestTutorialsNinjaLogin:
             except TimeoutException:
                 pass
 
-            my_account = wait.until(
-                EC.visibility_of_element_located((By.LINK_TEXT, "My Account"))
-            )
-
+            my_account = wait.until(EC.visibility_of_element_located((By.LINK_TEXT, "My Account")))
             assert my_account.is_displayed()
             self.log.info("Login successful")
 

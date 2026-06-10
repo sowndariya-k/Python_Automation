@@ -1,20 +1,19 @@
 import pytest
 from selenium import webdriver
 import read_config
-
-
 @pytest.fixture()
 def setup_and_teardown(request):
-    browser=read_config.get_config("basic info", "browser")
-    if browser.lower()=="chrome":
-        driver=webdriver.Chrome()
+    browser = read_config.get_config("basic info", "browser")
+    url = read_config.get_config("basic info", "url")
+    if browser.lower() == "chrome":
+        driver = webdriver.Chrome()
+    elif browser.lower() == "edge":
+        driver = webdriver.Edge()
     else:
-        raise Exception("Unsupported Browser")
+        raise Exception("Browser not supported")
     driver.maximize_window()
-
-    url=read_config.get_config("basic info", "url")
+    driver.implicitly_wait(5)
     driver.get(url)
-    request.cls.driver=driver
-
+    request.cls.driver = driver
     yield
     driver.quit()

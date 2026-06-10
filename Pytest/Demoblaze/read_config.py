@@ -1,12 +1,17 @@
 from configparser import ConfigParser
 import os
 
-config = ConfigParser()
+def get_config(category, key):
+    config = ConfigParser()
 
-base_dir = os.path.dirname(os.path.abspath(__file__))
-config_path = os.path.join(base_dir, "config.ini")
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    file_path = os.path.join(base_dir, "config.ini")
 
-config.read(config_path)
+    print("LOADING:", file_path)
 
-def get_config(section, key):
-    return config.get(section, key)
+    with open(file_path, "r", encoding="utf-8-sig") as f:
+        config.read_file(f)
+
+    print("SECTIONS:", config.sections())
+
+    return config.get(category, key)
