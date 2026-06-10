@@ -8,7 +8,8 @@ import read_config
 class TestLogin:
 
     def test_validlogin(self):
-        self.driver.find_element(By.ID, "login2").click()
+        login_link = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.ID, "login2")))
+        login_link.click()
         username = read_config.get_config("login credential", "username")
         password = read_config.get_config("login credential", "password")
         self.driver.find_element(By.ID, "loginusername").send_keys(username)

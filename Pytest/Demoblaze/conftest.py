@@ -14,6 +14,8 @@ def setup_and_teardown(request):
     driver.maximize_window()
     driver.implicitly_wait(5)
     driver.get(url)
+    print("Current URL:", driver.current_url)
+    print("Title:", driver.title)
     request.cls.driver = driver
     yield
     driver.quit()
