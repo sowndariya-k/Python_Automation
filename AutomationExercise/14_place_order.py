@@ -18,13 +18,13 @@ name=driver.find_element(By.XPATH, "//input[@placeholder='Name']")
 name.send_keys("sowndariya")
 
 email=driver.find_element(By.XPATH, "//input[@data-qa='signup-email']")
-email.send_keys("sowndariya911@gmail.com")
+email.send_keys("sowndariya05@gmail.com")
 signup=driver.find_element(By.XPATH,"//button[text()='Signup']").click()
 print("signup clicked")
 
-name_new=driver.find_element(By.ID, "name")
+name=driver.find_element(By.ID, "name")
 email_new=driver.find_element(By.ID, "email")
-print(name_new.get_attribute("value"))
+print(name.get_attribute("value"))
 print(email_new.get_attribute("value"))
 
 account_info = driver.find_element(By.XPATH,"//b[text()='Enter Account Information']")
@@ -79,7 +79,14 @@ print("ACCOUNT CREATED:", account_created.is_displayed())
 driver.find_element(By.XPATH, "//a[text()='Continue']").click()
 
 # 14. Verify Logged In
-logged_in = driver.find_element(By.XPATH, "//a[contains(text(),'Logged in as')]")
+logged_in = WebDriverWait(driver, 15).until(
+    EC.visibility_of_element_located(
+        (By.XPATH, "//a[contains(text(),'Logged in as')]")
+    )
+)
+
+print("Logged In:", logged_in.is_displayed())
+print(logged_in.text)
 print("Logged In:", logged_in.is_displayed())
 print(logged_in.text)
 
@@ -99,12 +106,9 @@ print("Cart page displayed:", cart_page.is_displayed())
 # Proceed To Checkout
 driver.find_element(By.XPATH,"//a[text()='Proceed To Checkout']").click()
 
-# Register / Login
-driver.find_element(By.XPATH,"//u[text()='Register / Login']").click()
-
 # Cart
 driver.find_element(By.XPATH,"//a[text()=' Cart']").click()
-
+print("cart link clicked")
 # Proceed To Checkout
 checkout = WebDriverWait(driver,10).until(
     EC.element_to_be_clickable((By.XPATH,"//a[text()='Proceed To Checkout']"))
